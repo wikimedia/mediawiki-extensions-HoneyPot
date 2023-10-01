@@ -147,6 +147,9 @@ class AccountCreationTest extends MediaWikiIntegrationTestCase {
 	public function testNotTriggered( bool $misleading, string $error ) {
 		// $error is unused here
 		$username = 'HoneyPotNotTriggered' . wfTimestampNow();
+		// Make the names distinct for $misleading so that if they run too
+		// close together nothing breaks
+		$username .= 'v' . (string)(int)$misleading;
 		$userId = $this->selectUserId(
 			$username,
 			__METHOD__ . ' before submission'
