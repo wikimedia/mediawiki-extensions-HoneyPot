@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Daniel Scherzer"
+		]
+	},
+	"honeypot-desc": "Provides a honeypot input field on Special:CreateAccount",
+	"honeypot-field-label": "Leave this field empty",
+	"honeypot-triggered-error": "Please leave the honeypot input field blank!"
+}

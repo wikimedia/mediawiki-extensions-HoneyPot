@@ -1,0 +1,48 @@
+{
+	"name": "HoneyPot",
+	"author": [
+		"Daniel Scherzer",
+		"WikiTeq"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:HoneyPot",
+	"descriptionmsg": "honeypot-desc",
+	"type": "antispam",
+	"requires": {
+		"MediaWiki": ">= 1.39.0"
+	},
+	"MessagesDirs": {
+		"HoneyPot": [
+			"i18n"
+		]
+	},
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\HoneyPot\\": "includes/"
+	},
+	"HookHandlers": {
+		"main": {
+			"class": "MediaWiki\\Extension\\HoneyPot\\Hooks"
+		}
+	},
+	"Hooks": {
+		"AuthChangeFormFields": {
+			"handler": "main"
+		}
+	},
+	"AuthManagerAutoConfig": {
+		"preauth": {
+			"HoneyPotPreAuthenticationProvider": {
+				"class": "MediaWiki\\Extension\\HoneyPot\\Auth\\HoneyPotPreAuthenticationProvider",
+				"services": [
+					"MainConfig"
+				],
+				"sort": 10
+			}
+		}
+	},
+	"config": {
+		"HoneyPotMisleadingError": {
+			"value": false
+		}
+	},
+	"manifest_version": 2
+}

@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Daniel Scherzer"
+		]
+	},
+	"honeypot-desc": "{{desc|name=HoneyPot|url=https://www.mediawiki.org/wiki/Extension:HoneyPot}}",
+	"honeypot-field-label": "Label for honey pot form field, normally not shown",
+	"honeypot-triggered-error": "Error shown when HoneyPot is triggered and misleading errors are not enabled"
+}
