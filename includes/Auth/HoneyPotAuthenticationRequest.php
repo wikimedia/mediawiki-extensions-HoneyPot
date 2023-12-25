@@ -7,6 +7,7 @@ use MediaWiki\Auth\AuthManager;
 
 /**
  * Honey pot authentication request that adds a field that should be left blank.
+ * @license GPL-2.0-or-later
  */
 class HoneyPotAuthenticationRequest extends AuthenticationRequest {
 	/** @var string Value of the honeypot field */

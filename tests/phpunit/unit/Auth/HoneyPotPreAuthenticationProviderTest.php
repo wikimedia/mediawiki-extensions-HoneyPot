@@ -13,6 +13,7 @@ use User;
 /**
  * @covers \MediaWiki\Extension\HoneyPot\Auth\HoneyPotPreAuthenticationProvider
  * @group extension-HoneyPot
+ * @license GPL-2.0-or-later
  */
 class HoneyPotPreAuthenticationProviderTest extends MediaWikiUnitTestCase {
 

@@ -16,6 +16,7 @@ use Wikimedia\TestingAccessWrapper;
 /**
  * @covers \MediaWiki\Extension\HoneyPot\Hooks
  * @group extension-HoneyPot
+ * @license GPL-2.0-or-later
  */
 class HooksTest extends MediaWikiUnitTestCase {
 

@@ -9,6 +9,9 @@ use MediaWiki\Logger\LoggerFactory;
 use MediaWiki\SpecialPage\Hook\AuthChangeFormFieldsHook;
 use Psr\Log\LoggerInterface;
 
+/**
+ * @license GPL-2.0-or-later
+ */
 class Hooks implements AuthChangeFormFieldsHook {
 
 	private LoggerInterface $logger;
