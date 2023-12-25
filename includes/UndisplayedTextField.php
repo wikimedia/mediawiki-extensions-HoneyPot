@@ -6,6 +6,7 @@ use HTMLTextField;
 
 /**
  * Subclass of HTMLTextField that applies `display: none;` styles to the output
+ * @license GPL-2.0-or-later
  */
 class UndisplayedTextField extends HTMLTextField {
 

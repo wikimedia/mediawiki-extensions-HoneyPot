@@ -8,6 +8,9 @@ use MediaWiki\Auth\AbstractPreAuthenticationProvider;
 use MediaWiki\Auth\AuthenticationRequest;
 use StatusValue;
 
+/**
+ * @license GPL-2.0-or-later
+ */
 class HoneyPotPreAuthenticationProvider extends AbstractPreAuthenticationProvider {
 	private bool $misleadingErrors;
 

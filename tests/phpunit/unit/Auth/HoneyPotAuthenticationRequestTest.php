@@ -9,6 +9,7 @@ use MediaWikiUnitTestCase;
 /**
  * @covers \MediaWiki\Extension\HoneyPot\Auth\HoneyPotAuthenticationRequest
  * @group extension-HoneyPot
+ * @license GPL-2.0-or-later
  */
 class HoneyPotAuthenticationRequestTest extends MediaWikiUnitTestCase {
 

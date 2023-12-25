@@ -24,6 +24,7 @@ use Title;
  * @covers \MediaWiki\Extension\HoneyPot\UndisplayedTextField
  * @group extension-HoneyPot
  * @group Database
+ * @license GPL-2.0-or-later
  */
 class AccountCreationTest extends MediaWikiIntegrationTestCase {
 
