@@ -1,10 +1,12 @@
 <?xml version="1.0"?>
 <ruleset>
-	<rule ref="./vendor/mediawiki/mediawiki-codesniffer/MediaWiki" />
+	<rule ref="./vendor/mediawiki/mediawiki-codesniffer/MediaWiki">
+		<exclude name="MediaWiki.WhiteSpace.SpaceBeforeSingleLineComment.NewLineComment" />
+	</rule>
 	<rule ref="MediaWiki.Commenting.ClassLevelLicense">
-    	<properties>
-        	<property name="license" value="GPL-2.0-or-later" />
-    	</properties>
+		<properties>
+			<property name="license" value="GPL-2.0-or-later" />
+		</properties>
 	</rule>
 	<file>.</file>
 	<arg name="extensions" value="php"/>
