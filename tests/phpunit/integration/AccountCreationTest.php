@@ -61,7 +61,7 @@ class AccountCreationTest extends MediaWikiIntegrationTestCase {
 	 * @return mixed
 	 */
 	private function selectUserId( string $username, string $caller ) {
-		return $this->db->newSelectQueryBuilder()
+		return $this->getDb()->newSelectQueryBuilder()
 					->select( 'user_id' )
 					->from( 'user' )
 					->where( [ 'user_name' => $username ] )
