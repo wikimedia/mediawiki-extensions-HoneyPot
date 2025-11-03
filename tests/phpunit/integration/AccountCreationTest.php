@@ -2,12 +2,12 @@
 
 namespace MediaWiki\Extension\HoneyPot\Test\Integration;
 
-use FauxRequest;
 use MediaWiki\Extension\HoneyPot\Auth\HoneyPotPreAuthenticationProvider;
 use MediaWiki\MainConfigNames;
+use MediaWiki\Request\FauxRequest;
+use MediaWiki\Title\Title;
 use MediaWikiIntegrationTestCase;
 use SpecialCreateAccount;
-use Title;
 
 /**
  * Integration test that the `trigger` field actually gets added to
